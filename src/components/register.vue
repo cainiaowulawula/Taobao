@@ -1,19 +1,19 @@
-<!-- <template>
-    <i-form v-ref:form-inline :model="formInline" :rules="ruleInline" inline>
-        <Form-item prop="user">
-            <i-input type="text" :value.sync="formInline.user" placeholder="Username">
+<template>
+    <Form ref="formInline" :model="formInline" :rules="ruleInline" inline>
+        <FormItem prop="user">
+            <Input type="text" v-model="formInline.user" placeholder="Username">
                 <Icon type="ios-person-outline" slot="prepend"></Icon>
-            </i-input>
-        </Form-item>
-        <Form-item prop="password">
-            <i-input type="password" :value.sync="formInline.password" placeholder="Password">
-                <Icon type="ios-locked-outline" slot="prepend"></Icon>
-            </i-input>
-        </Form-item>
-        <Form-item>
-            <i-button type="primary" @click="handleSubmit('formInline')">注册</i-button>
-        </Form-item>
-    </i-form>
+            </Input>
+        </FormItem><br />
+        <FormItem prop="password">
+            <Input type="password" v-model="formInline.password" placeholder="Password">
+                <Icon type="ios-lock-outline" slot="prepend"></Icon>
+            </Input>
+        </FormItem><br />
+        <FormItem>
+            <Button type="primary" @click="handleSubmit('formInline')">注册</Button>
+        </FormItem>
+    </Form>
 </template>
 <script>
     export default {
@@ -47,4 +47,3 @@
         }
     }
 </script>
- -->
