@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+<<<<<<< HEAD
     <!-- <img src="./assets/logo.png">-->
     <!-- <router-view/>  -->
     <!-- <product-list-one v-bind:products="products"></product-list-one>
@@ -9,6 +10,10 @@
     <button @click="incrementAsync">异步增加</button>
     <h1>{{count}}</h1>
     <h1>{{EvenOrOdd}}</h1> -->
+=======
+    <img src="./assets/logo.png">
+		<router-view/>
+>>>>>>> 2c93fa1c4c6207b3acc7cd5f18bbfbfa463c42bf
   </div>
 </template>
 
@@ -42,11 +47,29 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+<<<<<<< HEAD
   margin-top: 25px;
 }
 *{
   margin: 0px;
   padding: 0px;
   overflow: hidden;
+=======
+  margin-top: 60px;
+	
+}
+p{
+	margin-right: -25%;
+	margin-top:-15px;
+}
+p a{
+	color: darkgrey;
+}
+html,body{
+	background: linear-gradient(to bottom right,#a04fff,#6a37fd);
+	
+	overflow: hidden;
+	height: 100%;
+>>>>>>> 2c93fa1c4c6207b3acc7cd5f18bbfbfa463c42bf
 }
 </style>

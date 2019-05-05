@@ -1,18 +1,22 @@
-<!-- <template>
+ <template>
     <Form ref="formInline" :model="formInline" :rules="ruleInline" inline>
         <FormItem prop="user">
             <Input type="text" v-model="formInline.user" placeholder="Username">
                 <Icon type="ios-person-outline" slot="prepend"></Icon>
             </Input>
-        </FormItem>
+        </FormItem><br />
         <FormItem prop="password">
             <Input type="password" v-model="formInline.password" placeholder="Password">
                 <Icon type="ios-lock-outline" slot="prepend"></Icon>
             </Input>
-        </FormItem>
+        </FormItem><br />
         <FormItem>
-            <Button type="primary" @click="handleSubmit('formInline')">Signin</Button>
+            <Button type="primary" @click="handleSubmit('formInline')">登录</Button>
+			<Button style="margin-left: 8px">重置</Button>
         </FormItem>
+		<p>
+			<router-link to="./register">忘记密码？去注册</router-link>
+		</p>
     </Form>
 </template>
 <script>
@@ -47,4 +51,3 @@
         }
     }
 </script>
- -->
