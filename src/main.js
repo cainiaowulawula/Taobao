@@ -7,6 +7,7 @@ import Mint from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import vuex from 'vuex'
 // import store from './assets/store'
+import store from './store/index.js'
 
 Vue.config.productionTip = false
 Vue.use(Mint)
@@ -62,7 +63,7 @@ Vue.use(vuex)
 new Vue({
   el: '#app',
   router,
-  // store,
+  store,
   components: { App },
   template: '<App/>'
 })
